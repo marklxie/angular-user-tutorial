@@ -1,0 +1,22 @@
+<h3>User List</h3>
+  <table  class="table table-sm">
+    <tr>
+      <th>Id</th>
+      <th>Username</th>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>IsAdmin</th>
+      <th>isReviewer</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.lastname}}, {{user.firstname}}</td>
+      <td>{{user.phone}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.isAdmin? "Yes":"No"}}</td>
+      <td>{{user.isReviewer? "Yes":"No"}}</td>
+  </tr>
+  </table>
+  
